@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: "Public Sans", sans-serif;
+}
+body{
+    width: 100%;
+}
+p{
+    font-size: 1.6rem;
+    color: hsl(233, 8%, 62%);
+    line-height: 1.6;
+}
+section{
+    padding: 5rem 0;
+}
+.container{
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+}
+:root{
+    color: hsl(233, 26%, 24%); /*darkblue*/
+    color: hsl(136, 65%, 51%); /*limegreen*/
+    color: hsl(192, 70%, 51%); /*brightcyan*/
+    color: hsl(233, 8%, 62%); /*grayishblue*/
+    color: hsl(220, 16%, 96%); /*lightgrayishblue*/
+    color: hsl(0, 0%, 98%); /*verylightgray*/
+    color: hsl(0, 0%, 100%); /*white*/
+}
+.u-mb-small{
+    margin-bottom: 1.6rem;
+}
+.u-mb-medium{
+    margin-bottom: 3rem;
+}
+.u-mb-large{
+    margin-bottom: 5rem;
+}
+header{
+    width: 100%;
+    height: 7.5rem;
+    padding: 2.5rem 0;
+    background-color: hsl(0, 0%, 98%);
+    position: relative;
+    z-index: 999;
+}
+.logo{
+    height: 2.3rem;
+}
+.check{
+    display: none;
+}
+.hamburger{
+    display: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav-ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-ul li{
+    list-style: none;
+    padding: 0 1.5rem;
+}
+li a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: hsl(233, 8%, 62%);
+    padding-bottom: 2rem;
+    position: relative;
+}
+li a:hover{
+    color: hsl(233, 26%, 24%);
+}
+nav ul li a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: .3rem;
+    background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all .3s;
+}
+nav ul li a:hover::before{
+    opacity: 1;
+    transform: scaleX(1);
+}
+.btn{
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    text-decoration: none;
+    padding: 1.3rem 3rem;
+    background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    border-radius: 5rem;
+    opacity: 1;
+    transform: scaleX(1);
+    transition: all .2s;
+}
+.btn:hover{
+    opacity: .8;
+    transform: scaleX(1.1);
+}
+.u-mb-small{
+    color: black;
+    font-size: 1.6rem
+}
+.welcome-section{
+    width: 100%;
+    background-color: hsl(0, 0%, 98%);
+}
+.welcome-container{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.welcome-image{
+    display: inline-block;
+    text-align: center;
+   
+    
+}
+.welcome-image::before{
+    content: "";
+    position: absolute;
+    top: -12rems;
+    right: 0;
+    width: 60rem;
+    height: 40rem;
+    background-image: url(./easybank-landing-page-master/images/bg-intro-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.welcome-image img{
+    width: 100%;
+    height: 48rem;
+    transform: translateY(-15rem);
+}
+.welcometext{
+    text-align: center;
+}
+.welcometext h1{
+    font-size: 3.5rem;
+    font-weight: normal;
+    color: hsl(233, 26%, 24%);
+    line-height: 4.5rem;
+}
+.welcometext h1 span{
+    display: inline-block;
+}
+
+.about-section{
+    background-color:  hsl(220, 16%, 96%);
+}
+.about-text{
+    width: 100%;
+    text-align: center;
+}
+.heading-secondary{
+    font-size: 3rem;
+    font-weight: normal;
+    color: hsl(233, 26%, 24%);
+    line-height: 4.5rem;
+}
+.about-item{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    row-gap: 4rem;
+    column-gap: 1rem;
+}
+.about-item-box{
+    display: inline-block;
+    text-align: center;
+}
+.heading-tertiary{
+    font-size: 2rem;
+    font-weight: normal;
+    color: hsl(233, 26%, 24%);
+    line-height: 4.5rem;
+}
+
+.article-section{
+    background-color: hsl(0, 0%, 98%);
+}
+.article{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    row-gap: 4rem;
+    column-gap: 2rem;
+}
+.article-box{
+    background-color:  hsl(0, 0%, 100%);
+    border-radius: .5rem;
+    overflow: hidden;
+}
+.article-box img{
+    width: 100%;
+    height: 23rem;
+}
+.article-content{
+    padding: 2rem;
+}
+.article-author{
+    font-size: 1.2rem;
+}
+.article-heading{
+    font-size: 1.7rem;
+    font-weight: normal;
+    color:  hsl(233, 26%, 24%);
+}
+.article-execerpt{
+    font-size: 1.3rem;
+}
+
+footer{
+    padding: 5rem 0;
+    background-color: hsl(233, 26%, 24%);
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    row-gap: 4rem;
+    column-gap: 2rem;
+}
+.footer-icons a{
+    padding-right: 1rem;
+}
+.footer-links ul li{
+    list-style: none;
+    padding-bottom: 1.5rem;
+}
+.footer-links ul li a{
+    color: hsl(233, 8%, 62%);
+}
+.footer-links ul li:hover{
+    color: hsl(136, 65%, 51%);
+}
+
+
+@media screen and (max-width: 832px){
+    nav .btn{
+        display: none;
+    }
+    .hamburger{
+        display: inline-block;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        cursor: pointer;
+    }
+    .hamburger img{
+        width: 3rem;
+    }
+    .nav-ul{
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        padding: 1rem 0;
+        margin-top: 4rem;
+        background-color: hsl(0, 0%, 100%);
+        border: 1px solid skyblue;
+        border-radius: .3rem;
+        transform: translateY(-200%); 
+        transition: all .5s;
+        z-index: 999;
+    }
+    .nav-ul li{
+        padding: 1rem 0;
+        font-size: 1.6rem;
+    }
+    li a{
+        color: hsl(233, 26%, 24%);
+        font-weight: 400;
+    }
+    li a:hover{
+        color: hsl(136, 65%, 51%);
+    }
+    nav ul li a:hover::before{
+        opacity: 0;
+    }
+    #toggle:checked ~ .nav-ul{
+        transform: translateY(1%); 
+    }
+    #toggle:checked ~ .hamburger{
+        border: 1px solid red;
+        border-radius: .3rem;
+        padding: .4rem;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 769px){
+    .welcome-image{
+        display: inline-block;
+        text-align: center;
+        height: 38rem;
+    }
+    .welcome-image::before{
+        top:-35rem;
+        right: 0;
+        width: 65rem;
+        height: 83rem;
+        background-image: url(./easybank-landing-page-master/images/bg-intro-desktop.svg);
+    }
+    .welcome-image img{
+        width: 70%;
+        height: 48rem;
+        transform: translateY(-15rem);
+    }
+}
+
+@media screen and (min-width: 770px){
+    .welcome-section{
+        padding: 3rem 0 1rem 0;
+    }
+    .welcome-container{
+        flex-direction: row;
+    }
+    .welcome-image::before{
+        display: none;
+    }
+    .welcometext{
+        text-align: left;
+        padding: 5rem 0;
+        width: 85%;
+    }
+    .welcome-image{
+        width: 100%;
+        position: relative;
+    }
+    .welcome-image img{
+        position: absolute;
+        width: 40rem;
+        height: 65rem;
+        top: -3rem;
+        right: 0;
+        z-index: 1;
+    }
+    .about-text{
+        width: 50%;
+        text-align: left;
+    }
+    .about-item-box{
+        text-align: left;
+    }
+}
+
+
+@keyframes moveup{
+    0%{
+        transform: translateY(100%);
+    }
+    50%{
+       transform: translateY(50%); 
+    }
+    100%{
+       transform: translateY(0); 
+    }
+}
+
+.moveup{
+    animation: moveup .8s 1 linear;
+}
