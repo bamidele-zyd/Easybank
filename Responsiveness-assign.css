@@ -155,15 +155,23 @@ nav ul li a:hover::before{
 }
 .welcometext{
     text-align: center;
+    padding-left: 2rem;
 }
 .welcometext h1{
     font-size: 3.5rem;
     font-weight: normal;
     color: hsl(233, 26%, 24%);
     line-height: 4.5rem;
+    padding-left: 4rem;
 }
 .welcometext h1 span{
     display: inline-block;
+}
+.welcometext p{
+    padding-left: 4rem;
+}
+ .welcometext .btn{
+    margin-left: 4rem;
 }
 
 .about-section{
