@@ -156,6 +156,7 @@ nav ul li a:hover::before{
 .welcometext{
     text-align: center;
     padding-left: 2rem;
+    margin-left: 7rem;
 }
 .welcometext h1{
     font-size: 3.5rem;
