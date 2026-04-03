@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 *{
     
     padding: 0px;
@@ -236,6 +237,100 @@ nav ul li a:hover::before{
 }
 .article-execerpt{
     font-size: 1.3rem;
+}
+
+.contact-section{
+    background-color: hsl(220, 16%, 96%);
+}
+.request{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-text p{
+    width: 48rem;
+}
+.help{
+    display: flex;
+    column-gap: 12rem;
+}
+.doc button{
+    padding: 0.7rem;
+    border-radius: 1rem;
+}
+.bi-file-earmark-fill{
+    color: hsl(192, 70%, 51%);
+}
+.mail button{
+    padding: 0.7rem;
+    border-radius: 1rem;
+}
+.bi-envelope-fill{
+    color: hsl(192, 70%, 51%);
+}
+.phone button{
+    padding: 0.7rem;
+    border-radius: 1rem;
+}
+.bi-telephone-fill{
+    color: hsl(192, 70%, 51%);
+}
+.link button{
+    padding: 0.7rem;
+    border-radius: 1rem;
+}
+.bi-link-45deg{
+    color: hsl(192, 70%, 51%);
+}
+.call{
+    display: flex;
+    column-gap: 11rem;
+}
+.form{
+    width: 48rem;
+}
+.name{
+    padding-top: 4rem;
+}
+.name input{
+    border-radius: 1rem;
+    width: 100%;
+    padding: 1rem 1.4rem;
+}
+.email{
+    padding-top: 2rem;
+}
+.email input{
+    border-radius: 1rem;
+    width: 100%;
+    padding: 1rem 1.4rem;
+}
+.inquire{
+    padding-top: 2rem;
+}
+.inquire textarea{
+    border-radius: 1rem;
+    width: 100%;
+    padding: 1rem 1.4rem;
+}
+.submit{
+    font-size: 1.5rem;
+    font-family: "Public Sans", sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    text-decoration: none;
+    padding: 1.3rem 3rem;
+    margin-top: 2rem;
+    background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    border-radius: 5rem;
+    border: none;
+    opacity: 1;
+    transform: scaleX(1);
+    transition: all .2s;
+}
+.submit:hover{
+    cursor: pointer;
+    opacity: .8;
+    transform: scaleX(1.1);
 }
 
 footer{
