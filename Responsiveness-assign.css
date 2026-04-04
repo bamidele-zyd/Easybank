@@ -135,8 +135,6 @@ nav ul li a:hover::before{
 .welcome-image{
     display: inline-block;
     text-align: center;
-   
-    
 }
 .welcome-image::before{
     content: "";
@@ -155,9 +153,10 @@ nav ul li a:hover::before{
     transform: translateY(-15rem);
 }
 .welcometext{
-    text-align: center;
-    padding-left: 2rem;
+    text-align: left;
+    padding: 5rem 0;
     margin-left: 7rem;
+    width: 85%;
 }
 .welcometext h1{
     font-size: 3.5rem;
@@ -246,11 +245,19 @@ nav ul li a:hover::before{
     display: flex;
     justify-content: space-between;
 }
+.contact-text{
+    padding-left: 2.5rem;
+}
+.contact-text h2{
+    padding-left: 5rem;
+}
 .contact-text p{
-    width: 48rem;
+    width: 25rem;
+    text-align: center;
 }
 .help{
     display: flex;
+    flex-wrap: wrap;
     column-gap: 12rem;
 }
 .doc button{
@@ -283,6 +290,7 @@ nav ul li a:hover::before{
 }
 .call{
     display: flex;
+    flex-wrap: wrap;
     column-gap: 11rem;
 }
 .form{
@@ -407,6 +415,10 @@ footer{
         border-radius: .3rem;
         padding: .4rem;
     }
+    .request{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media screen and (min-width: 501px) and (max-width: 769px){
@@ -429,6 +441,16 @@ footer{
     }
 }
 
+@media screen and (max-width: 500px){
+    .welcometext{
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .form{
+        width: 25rem;
+    }
+}
+
 @media screen and (min-width: 770px){
     .welcome-section{
         padding: 3rem 0 1rem 0;
@@ -438,11 +460,6 @@ footer{
     }
     .welcome-image::before{
         display: none;
-    }
-    .welcometext{
-        text-align: left;
-        padding: 5rem 0;
-        width: 85%;
     }
     .welcome-image{
         width: 100%;
